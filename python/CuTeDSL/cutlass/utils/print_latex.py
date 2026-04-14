@@ -148,7 +148,7 @@ def print_latex_tv(
         if render_func is not None:
             latex_output.append(" ".join(str(arg) for arg in args))
         else:
-            print(**args)
+            print(*args)
 
     if render_func is None:
         print_or_append("%% Layout TV: {}", layout_tv)
